@@ -11,7 +11,6 @@ class MainUIClass(QMainWindow, LoginGUI.Ui_MainWindow):
         super(MainUIClass, self).__init__(parent)
         self.setupUi(self)
         self.ConnectButton.clicked.connect(self.start)
-        #self.setWindowFlags(Qt.WindowMinimizeButtonHint | Qt.WindowCloseButtonHint)
 
 
     def start(self):
