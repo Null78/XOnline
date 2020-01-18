@@ -3,7 +3,7 @@
  
  The code is not organized and i didn't put comments because who cares
  
- But if are reading this you can contact me and i'll do it for you
+ But if you are reading this you can contact me and i'll do it for you
 
 # Dependencies:
 * Python 3
