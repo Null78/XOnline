@@ -50,11 +50,10 @@ class ServerThread(QThread):
     def ip(self):
         try:
             from requests import get
-            req = get('https://api.ipify.org?format=json', timeout=3)
-            return req.json()['ip']
+            req = get('http://api.ipify.org', timeout=3)
+            return req.text
         except:
             return ""
-            self.error.emit("nNo Internet Connection")
 
     def close(self):
         self.s.close()

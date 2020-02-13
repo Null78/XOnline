@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.XOLabel.sizePolicy().hasHeightForWidth())
         self.XOLabel.setSizePolicy(sizePolicy)
         self.XOLabel.setText("")
-        self.XOLabel.setPixmap(QtGui.QPixmap("img/xo.png"))
+        self.XOLabel.setPixmap(QtGui.QPixmap("./img/xo.png"))
         self.XOLabel.setScaledContents(True)
         self.XOLabel.setObjectName("XOLabel")
         self.gridLayout.addWidget(self.XOLabel, 1, 0, 1, 1)

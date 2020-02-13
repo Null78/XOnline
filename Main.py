@@ -15,7 +15,7 @@ class MainUIClass(QMainWindow, LoginGUI.Ui_MainWindow):
 
     def start(self):
         self.ConnectButton.setDisabled(True)
-        if self.UsernameEdit.text() == "" or self.UsernameEdit.text().replace(" ", "") == "":
+        if self.UsernameEdit.text() == "" or self.UsernameEdit.text().strip() == "":
             QMessageBox.warning(self, "Error", "Username Cannot be Empty")
             self.ConnectButton.setDisabled(False)
 
@@ -29,7 +29,7 @@ class MainUIClass(QMainWindow, LoginGUI.Ui_MainWindow):
 
             else:
                 import validip
-                if not validip.check(self.ServerEdit.text()):
+                if not validip.check(self.ServerEdit.text().strip()):
                     QMessageBox.warning(self, "Error", "Invalid IP Address")
                     self.ConnectButton.setDisabled(False)
                 else:
@@ -50,7 +50,7 @@ class MainUIClass(QMainWindow, LoginGUI.Ui_MainWindow):
     def client(self):
         import Client
         self.host = False
-        self.clientclass = Client.ClientThread(self.UsernameEdit.text(), self.ServerEdit.text())
+        self.clientclass = Client.ClientThread(self.UsernameEdit.text(), self.ServerEdit.text().strip())
         self.clientclass.oppo.connect(self.buildui)
         self.clientclass.rply.connect(self.updates)
         self.clientclass.error.connect(self.errors)
@@ -539,6 +539,7 @@ class MainUIClass(QMainWindow, LoginGUI.Ui_MainWindow):
                                 QMessageBox.Yes | QMessageBox.No)
         if x == QMessageBox.Yes:
             sys.exit()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
