@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlayWindow</class>
+ <widget class="QMainWindow" name="PlayWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>393</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>393</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>D:/Home/Photoshop/x.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Player 1:</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>D:/Home/Photoshop/o.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Player 2:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btn_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: none;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btn_7">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: none;
+border-left-style: none;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_1">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: none;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: none;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btn_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: none;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-color: black;
+border-width: 1.5px;
+</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="btn_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: none;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: solid;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btn_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: black;
+border-style: solid;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="btn_6">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: solid;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: solid;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btn_8">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: none;
+border-left-style: solid;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="btn_9">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-top-style: solid;
+border-right-style: none;
+border-bottom-style: none;
+border-left-style: solid;
+border-color: black;
+border-width: 1.5px;</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>D:/Home/Photoshop/z.png</normaloff>D:/Home/Photoshop/z.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>94</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
